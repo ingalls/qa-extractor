@@ -10,6 +10,10 @@
 
 ## Version History
 
+### v1.0.2
+
+- :tada: Add quiet mode `--quiet` or `-q`
+
 ### v1.0.1
 
 - :bug: `@type` for GeoJSON types was being determined incorrectly
