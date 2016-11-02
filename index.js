@@ -10,11 +10,12 @@ var argv = require('minimist')(process.argv, {
         "selector"
     ],
     integer: ["workers"],
-    boolean: ["help", "version"],
+    boolean: ["help", "version", "quiet"],
     alias: {
         "version": "v",
         "output":  "o",
-        "input":   "i"
+        "input":   "i",
+        "quiet":   "q"
     }
 });
 
@@ -25,6 +26,7 @@ if (argv.help) {
     console.log('   --input=<FILE.mbtiles>          QA-Tiles input file');
     console.log('   --output=<FILE.geojson>         Line delimited geojson results');
     console.log('   --workers=NUM                   [optional] control number of workers');
+    console.log('   --quiet                         Be less verbose.');
     process.exit(0);
 } else if (argv.version) {
     console.log(settings.name + '@' + settings.version);
