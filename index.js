@@ -7,11 +7,10 @@ var argv = require('minimist')(process.argv, {
     string: [
         "input",
         "output",
-        "selector",
-        "quiet"
+        "selector"
     ],
     integer: ["workers"],
-    boolean: ["help", "version"],
+    boolean: ["help", "version", "quiet"],
     alias: {
         "version": "v",
         "output":  "o",
