@@ -10,6 +10,10 @@
 
 ## Version History
 
+### v1.1.0
+
+- :arrow_up: Update all deps
+
 ### v1.0.2
 
 - :tada: Add quiet mode `--quiet` or `-q`
